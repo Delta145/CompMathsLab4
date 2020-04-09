@@ -1,0 +1,5 @@
+package chart
+
+class InterpolationChart {
+
+}

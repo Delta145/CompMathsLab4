@@ -53,7 +53,9 @@ class CommandHandler {
       val method = new LagrangePolynomial(sampleX(n), sampleY(n))
       val f = method.getFunction()
       val ans = f(arg.get)
+      val strF = method.getStringFunction()
       println(s"Значение y для введённого аргумента: $ans")
+      println(s"Получившаяся функция: $strF")
       new InterpolationChart("Интерполирование многочленом Лагранжа", f, cos, sampleX(n), sampleY(n)).drawChart()
     } catch {
       case e: Exception => println(e.getMessage)

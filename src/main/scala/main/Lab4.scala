@@ -1,5 +1,7 @@
 package main
 
-object Lab4 extends App {
+import io.CommandHandler
 
+object Lab4 extends App {
+  new CommandHandler().handleUserInput()
 }
